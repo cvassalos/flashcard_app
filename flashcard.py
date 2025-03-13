@@ -16,26 +16,44 @@ test_words = [
     'frog',
     'grapes'
 ]
-word_dict = {
-    'bed': 'το κρεβάτι',
-    'sofa': 'ο καναπές',
-    'street': 'ο δρόμος',
-    'park': 'το πάρκο',
-    'garden': 'ο κήοπος',
-    'bathroom': 'το μπάνιο',
-    'kitchen': 'η κουζίνα',
-    'dinig room': 'η τραπεζαρία',
-    'room': 'το δωμάτιο',
-    'office': 'το γραφείο'
-}
+
+word_dict = [
+    ('bed', 'το κρεβάτι'),
+    ('sofa', 'ο καναπές'),
+    ('street', 'ο δρόμος'),
+    ('park', 'το πάρκο'),
+    ('garden', 'ο κήοπος'),
+    ('bathroom', 'το μπάνιο'),
+    ('kitchen', 'η κουζίνα'),
+    ('dinig room', 'η τραπεζαρία'),
+    ('room', 'το δωμάτιο'),
+    ('office', 'το γραφείο')
+]
+# Dictionary Data Structure
+# word_dict = {
+#     'bed': 'το κρεβάτι',
+#     'sofa': 'ο καναπές',
+#     'street': 'ο δρόμος',
+#     'park': 'το πάρκο',
+#     'garden': 'ο κήοπος',
+#     'bathroom': 'το μπάνιο',
+#     'kitchen': 'η κουζίνα',
+#     'dinig room': 'η τραπεζαρία',
+#     'room': 'το δωμάτιο',
+#     'office': 'το γραφείο'
+# }
 
 
 
 
 # State variable
 idx = 0
-word = StringVar(value=test_words[0])
-word2 = test_words[0]
+# english_words = word_dict.keys()
+# translated_words = word_dict.values()
+
+
+word = StringVar(value=word_dict[0][0])
+# word = StringVar(value=test_words[0])
 
 # Create and grid outer frame for everything to go into
 mainFrame = ttk.Frame(root, padding=(5, 5, 12, 0))
