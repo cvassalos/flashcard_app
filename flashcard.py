@@ -29,7 +29,6 @@ word_dict = {
     'office': 'το γραφείο'
 }
 
-# function to iterate through list of words
 
 
 
@@ -46,12 +45,12 @@ root.grid_rowconfigure(0, weight=1)
 
 
 # Methods to make the flashcard app work
-def next_word(event=None):
+def next_word(event=None):    # Next method
     global idx
     idx = (idx + 1) % len(test_words)
     word.set(test_words[idx])
 
-def prev_word(event=None):
+def prev_word(event=None):    # Previous method
     global idx
     if(idx - 1 >= 0):
         idx = idx - 1
@@ -59,20 +58,24 @@ def prev_word(event=None):
         idx = len(test_words) - 1
     word.set(test_words[idx])
 
-def callback(name, index, mode):
-    return word.get()
 
 # Create widgets for the page
 flashcard = ttk.Label(mainFrame, textvariable=word)
-next_button = ttk.Button(mainFrame, text="Next Word", padding=(20, 10))
+
+
+next_button = ttk.Button(mainFrame, text="Next Word", padding=(20, 10))    # NEXT BUTTON
 next_button.bind('<ButtonPress-1>', next_word)
-prev_button = ttk.Button(mainFrame, text="Previous Word", padding=(20, 10))
+
+prev_button = ttk.Button(mainFrame, text="Previous Word", padding=(20, 10))    # PREVIOUS BUTTON
 prev_button.bind('<ButtonPress-1>', prev_word)
+
+translate_button = ttk.Button(mainFrame, text="Translate Word", padding=(20, 10))    # TRANSLATE BUTTON
 
 # Grid all the widgets
 flashcard.grid(column=0, row=0, sticky=(N,W,E,S))
 prev_button.grid(column=0, row=1, sticky=(N,W,E,S))
-next_button.grid(column=1, row=1, sticky=(N,W,E,S))
+translate_button.grid(column=1, row=1, sticky=(N,W,E,S))
+next_button.grid(column=2, row=1, sticky=(N,W,E,S))
 
 
 
