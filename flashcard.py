@@ -54,7 +54,7 @@ translated_idx = 0
 # translated_words = word_dict.values()
 
 
-word = StringVar(value=word_dict[0][0])
+word = StringVar(value=word_dict[english_idx][translated_idx])
 # word = StringVar(value=test_words[0])
 
 # Create and grid outer frame for everything to go into
@@ -66,17 +66,17 @@ root.grid_rowconfigure(0, weight=1)
 
 # Methods to make the flashcard app work
 def next_word(event=None):    # Next method
-    global idx
-    idx = (idx + 1) % len(test_words)
-    word.set(word_dict[idx])
+    global english_idx
+    english_idx = (english_idx + 1) % len(word_dict)
+    word.set(word_dict[english_idx][translated_idx])
 
 def prev_word(event=None):    # Previous method
-    global idx
-    if(idx - 1 >= 0):
-        idx = idx - 1
+    global english_idx
+    if(english_idx - 1 >= 0):
+        english_idx = english_idx - 1
     else:
-        idx = len(test_words) - 1
-    word.set(word_dict[idx])
+        english_idx = len(word_dict) - 1
+    word.set(word_dict[english_idx][translated_idx])
 
 def translate_word(event=None):
     global translated_idx
