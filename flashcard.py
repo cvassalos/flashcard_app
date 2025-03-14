@@ -48,6 +48,8 @@ word_dict = [
 
 # State variable
 idx = 0
+english_idx = 0
+translated_idx = 0
 # english_words = word_dict.keys()
 # translated_words = word_dict.values()
 
@@ -66,7 +68,7 @@ root.grid_rowconfigure(0, weight=1)
 def next_word(event=None):    # Next method
     global idx
     idx = (idx + 1) % len(test_words)
-    word.set(test_words[idx])
+    word.set(word_dict[idx])
 
 def prev_word(event=None):    # Previous method
     global idx
@@ -74,8 +76,12 @@ def prev_word(event=None):    # Previous method
         idx = idx - 1
     else:
         idx = len(test_words) - 1
-    word.set(test_words[idx])
+    word.set(word_dict[idx])
 
+def translate_word(event=None):
+    global translated_idx
+    translated_idx = 1 if translated_idx == 0 else 0
+    word.set()
 
 # Create widgets for the page
 flashcard = ttk.Label(mainFrame, textvariable=word)
