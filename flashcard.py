@@ -80,8 +80,12 @@ def prev_word(event=None):    # Previous method
 
 def translate_word(event=None):
     global translated_idx
+    # if translated_idx == 1:
+    #     translated_idx = 0
+    # else:
+    #     translated_idx = 1
     translated_idx = 1 if translated_idx == 0 else 0
-    word.set()
+    word.set(word_dict[english_idx][translated_idx])
 
 # Create widgets for the page
 flashcard = ttk.Label(mainFrame, textvariable=word)
@@ -94,6 +98,7 @@ prev_button = ttk.Button(mainFrame, text="Previous Word", padding=(20, 10))    #
 prev_button.bind('<ButtonPress-1>', prev_word)
 
 translate_button = ttk.Button(mainFrame, text="Translate Word", padding=(20, 10))    # TRANSLATE BUTTON
+translate_button.bind('<ButtonPress-1>', translate_word)
 
 # Grid all the widgets
 flashcard.grid(column=0, row=0, sticky=(N,W,E,S))
