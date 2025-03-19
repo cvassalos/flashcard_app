@@ -4,7 +4,6 @@ from tkinter import ttk
 # Create window, give size and a title
 root = Tk()
 root.title("Flashcard App")
-root.geometry("900x500")
 
 # Hard-coded list of words
 test_words = [
@@ -44,6 +43,22 @@ word_dict = [
 # }
 
 
+##### Gives window it's geometry and opens it in middle of the screen
+
+# Width and height sizes
+window_width = 900
+window_height = 500
+
+# get the screen dimensions
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+
+# find the center point
+center_x = int(screen_width / 2 - window_width / 2)
+center_y = int(screen_height / 2 - window_height / 2)
+
+# set the position of the window to the center of the screen
+root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 
 
 # State variable
@@ -62,6 +77,7 @@ mainFrame = ttk.Frame(root, padding=(5, 5, 12, 0))
 mainFrame.grid(column=0, row=0, sticky=(N,W,E,S))
 root.grid_columnconfigure(0, weight=1)
 root.grid_rowconfigure(0, weight=1)
+
 
 
 # Methods to make the flashcard app work
