@@ -5,6 +5,7 @@ from tkinter import ttk
 root = Tk()
 root.title("Flashcard App")
 
+
 # Hard-coded list of words
 test_words = [
     'apple',
@@ -59,6 +60,9 @@ center_y = int(screen_height / 2 - window_height / 2)
 
 # set the position of the window to the center of the screen
 root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
+
+# Change app icon
+root.iconbitmap('./images/flashcard.ico')
 
 
 # State variable
