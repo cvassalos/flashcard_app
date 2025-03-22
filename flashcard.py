@@ -61,11 +61,11 @@ center_y = int(screen_height / 2 - window_height / 2)
 # set the position of the window to the center of the screen
 root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 
-# Change app icon
+# Change app icon ----------------------------- NOT WORKING FOR SOME REASON
 root.iconbitmap('./images/flashcard.ico')
 
 
-# State variable
+# State variable --------------------- GOING TO SWITCH TO USING DICTIOINARY GETTING RID OF THIS NONESENSE
 idx = 0
 english_idx = 0
 translated_idx = 0
