@@ -108,7 +108,7 @@ def translate_word(event=None):
     word.set(word_dict[english_idx][translated_idx])
 
 # Create widgets for the page
-flashcard = ttk.Label(mainFrame, textvariable=word)
+flashcard = ttk.Label(mainFrame, textvariable=word, style='Flashcard.Label')
 
 
 next_button = ttk.Button(mainFrame, text="Next Word", padding=(20, 10))    # NEXT BUTTON
