@@ -76,6 +76,11 @@ translated_idx = 0
 word = StringVar(value=word_dict[english_idx][translated_idx])
 # word = StringVar(value=test_words[0])
 
+# Configuring the grid
+root.grid_columnconfigure(0, weight=1)
+root.grid_columnconfigure(1, weight=1)
+root.grid_columnconfigure(1, weight=1)
+
 # Create and grid outer frame for everything to go into
 mainFrame = ttk.Frame(root, padding=(5, 5, 12, 0))
 mainFrame.grid(column=0, row=0, sticky=(N,W,E,S))
@@ -121,10 +126,14 @@ translate_button = ttk.Button(mainFrame, text="Translate Word", padding=(20, 10)
 translate_button.bind('<ButtonPress-1>', translate_word)
 
 # Grid all the widgets
-flashcard.grid(column=0, row=0, sticky=(N,W,E,S))
-prev_button.grid(column=0, row=1, sticky=(N,W,E,S))
-translate_button.grid(column=1, row=1, sticky=(N,W,E,S))
-next_button.grid(column=2, row=1, sticky=(N,W,E,S))
+flashcard.grid(column=0, row=0, columnspan=3, sticky="nsew", pady=20)
+prev_button.grid(column=0, row=1, sticky="ew", padx=5, pady=10)
+translate_button.grid(column=1, row=1, sticky="ew", padx=5, pady=10)
+next_button.grid(column=2, row=1, sticky="ew", padx=5, pady=10)
+
+root.grid_rowconfigure(1, weight=1)
+
+# Styling the TKinter App
 
 
 
