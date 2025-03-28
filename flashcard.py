@@ -82,11 +82,13 @@ root.grid_columnconfigure(1, weight=1)
 root.grid_columnconfigure(1, weight=1)
 
 # Create and grid outer frame for everything to go into
-mainFrame = ttk.Frame(root, padding=(5, 5, 12, 0))
-mainFrame.grid(column=0, row=0, sticky=(N,W,E,S))
+mainFrame = ttk.Frame(root, padding=(30, 30))
+mainFrame.grid(column=0, row=0, sticky="nsew")
 root.grid_columnconfigure(0, weight=1)
 root.grid_rowconfigure(0, weight=1)
 
+print(mainFrame.winfo_width())
+print(mainFrame.winfo_height())
 
 
 # Methods to make the flashcard app work
