@@ -22,7 +22,7 @@ root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 
 # FRAME to put all the widgets into
 add_cards_frame = ttk.Frame(root, borderwidth=1)
-add_cards_frame.grid()
+add_cards_frame.grid(column=0, row=0)
 
 # Front of flashcard LABEL
 flashcard_front_label = ttk.Label(add_cards_frame, text="Front of Flashcard")
@@ -33,8 +33,8 @@ flashcard_front_entry = ttk.Entry(add_cards_frame)
 flashcard_front_entry.grid(column=1, row=0)
 
 # Back of flashcard LABEL
-flashcard_back_label = Label(add_cards_frame, text="Back of Flashcard")
-flashcard_front_label.grid(column=0, row=1)
+flashcard_back_label = ttk.Label(add_cards_frame, text="Back of Flashcard")
+flashcard_back_label.grid(column=0, row=1)
 
 # Back of the flashcard ENTRY BOX
 flashcard_back = ttk.Entry(add_cards_frame)
