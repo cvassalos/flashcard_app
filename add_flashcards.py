@@ -56,3 +56,21 @@ submit_btn.grid(column=0, row=2, columnspan=2, padx=25, pady=25)
 
 
 root.mainloop()
+
+
+"""
+    Things to work on:
+        - Classes for each type of word
+            - eg: noun, verb, adjective, adverb, etc
+
+        - A way to remove cards
+
+        - A way to edit cards
+
+        - A widget that lists all the flashcards that have been added
+            - A way to select the item in the list and to edit it if needed
+        
+        - Save that stack of flashcards to a text file to be used in the study portion of the program
+          
+        - A way to open already made stacks to add/remove/edit
+""""
