@@ -25,8 +25,8 @@ card_stack = {}
 
 # FUNCTIONS -----------------------------------------------
 def add_card_to_stack():
-    # flashcard_front_entry.get
-    pass
+    card_stack[flashcard_front_entry.get()] = flashcard_back_entry.get()
+    print(card_stack)
 
 
 # FRAME to put all the widgets into
@@ -47,8 +47,8 @@ flashcard_back_label = ttk.Label(add_cards_frame, text="Back of Flashcard")
 flashcard_back_label.grid(column=0, row=1)
 
 # Back of the flashcard ENTRY BOX
-flashcard_back = ttk.Entry(add_cards_frame)
-flashcard_back.grid(column=1, row=1)
+flashcard_back_entry = ttk.Entry(add_cards_frame)
+flashcard_back_entry.grid(column=1, row=1)
 
 # Add a button to add the card to the stack
 submit_btn = ttk.Button(add_cards_frame, text="Add Card", command=add_card_to_stack)
