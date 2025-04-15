@@ -141,3 +141,17 @@ root.grid_rowconfigure(1, weight=1)
 
 
 root.mainloop()
+
+
+
+
+
+
+
+"""
+    - Change data structure from list to dictionary
+
+    - Show number of cards
+      - IE 4/20, 1/15, 6/10
+    
+"""
