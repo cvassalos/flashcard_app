@@ -73,4 +73,4 @@ root.mainloop()
         - Save that stack of flashcards to a text file to be used in the study portion of the program
           
         - A way to open already made stacks to add/remove/edit
-""""
+"""
