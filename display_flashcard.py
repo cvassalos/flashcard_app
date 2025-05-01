@@ -1,3 +1,4 @@
+from flashcard import *
 from tkinter import *
 from tkinter import ttk
 
@@ -17,18 +18,18 @@ test_words = [
     'grapes'
 ]
 
-word_dict = [
-    ('bed', 'το κρεβάτι'),
-    ('sofa', 'ο καναπές'),
-    ('street', 'ο δρόμος'),
-    ('park', 'το πάρκο'),
-    ('garden', 'ο κήοπος'),
-    ('bathroom', 'το μπάνιο'),
-    ('kitchen', 'η κουζίνα'),
-    ('dinig room', 'η τραπεζαρία'),
-    ('room', 'το δωμάτιο'),
-    ('office', 'το γραφείο')
-]
+word_dict = (
+    Flashcard('bed', 'το κρεβάτι'),
+    Flashcard('sofa', 'ο καναπές'),
+    Flashcard('street', 'ο δρόμος'),
+    Flashcard('park', 'το πάρκο'),
+    Flashcard('garden', 'ο κήοπος'),
+    Flashcard('bathroom', 'το μπάνιο'),
+    Flashcard('kitchen', 'η κουζίνα'),
+    Flashcard('dinig room', 'η τραπεζαρία'),
+    Flashcard('room', 'το δωμάτιο'),
+    Flashcard('office', 'το γραφείο')
+)
 # Dictionary Data Structure
 # word_dict = {
 #     'bed': 'το κρεβάτι',
@@ -65,16 +66,6 @@ root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 root.iconbitmap('./images/flashcard.ico')
 
 
-# State variable --------------------- GOING TO SWITCH TO USING DICTIOINARY GETTING RID OF THIS NONESENSE
-idx = 0
-english_idx = 0
-translated_idx = 0
-# english_words = word_dict.keys()
-# translated_words = word_dict.values()
-
-
-word = StringVar(value=word_dict[english_idx][translated_idx])
-# word = StringVar(value=test_words[0])
 
 # Configuring the grid
 root.grid_columnconfigure(0, weight=1)
@@ -93,9 +84,6 @@ print(mainFrame.winfo_height())
 
 # Methods to make the flashcard app work
 def next_word(event=None):    # Next method
-    global english_idx
-    english_idx = (english_idx + 1) % len(word_dict)
-    word.set(word_dict[english_idx][translated_idx])
 
 def prev_word(event=None):    # Previous method
     global english_idx
