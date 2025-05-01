@@ -33,6 +33,10 @@ def add_card_to_stack():
 add_cards_frame = ttk.Frame(root, borderwidth=1)
 add_cards_frame.grid(column=0, row=0)
 
+# FRAME to hold Listbox that displays added cards
+flashcard_stack_frame = ttk.Frame(root, borderwidth=1)
+flashcard_stack_frame.grid(column=1, row=0)
+
 # Front of flashcard LABEL
 flashcard_front_label = ttk.Label(add_cards_frame, text="Front of Flashcard")
 flashcard_front_label.grid(column=0, row=0, padx=25, pady=25)
@@ -53,6 +57,11 @@ flashcard_back_entry.grid(column=1, row=1)
 # Add a button to add the card to the stack
 submit_btn = ttk.Button(add_cards_frame, text="Add Card", command=add_card_to_stack)
 submit_btn.grid(column=0, row=2, columnspan=2, padx=25, pady=25)
+
+# List of flashcards added to stack
+flashcard_stack = Listbox(flashcard_stack_frame, height=10)
+flashcard_stack.grid()
+
 
 
 root.mainloop()
