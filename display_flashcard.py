@@ -66,7 +66,6 @@ root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 root.iconbitmap('./images/flashcard.ico')
 
 
-
 # Configuring the grid
 root.grid_columnconfigure(0, weight=1)
 root.grid_columnconfigure(1, weight=1)
@@ -81,6 +80,7 @@ root.grid_rowconfigure(0, weight=1)
 print(mainFrame.winfo_width())
 print(mainFrame.winfo_height())
 
+current_card = word_dict[0]
 word = StringVar(value=word_dict[0].return_front())
 print(word_dict[0].return_front())
 
@@ -101,16 +101,15 @@ def prev_word(event=None):    # Previous method
     # word.set(word_dict[english_idx][translated_idx])
 
 def translate_word(event=None):
-    global translated_idx
-    # if translated_idx == 1:
-    #     translated_idx = 0
-    # else:
-    #     translated_idx = 1
-    translated_idx = 1 if translated_idx == 0 else 0
-    word.set(word_dict[english_idx][translated_idx])
-
+    if(current_card.side == 0):
+        current_card.side = 1
+        flashcard.config(text = current_card.return_back())
+    else:
+        current_card.side = 0 
+        flashcard.config(text = current_card.return_front())
+    
 # Create widgets for the page
-flashcard = ttk.Label(mainFrame, textvariable=word, style='Flashcard.Label')
+flashcard = ttk.Label(mainFrame, text=current_card.return_front(), style='Flashcard.Label')
 
 
 next_button = ttk.Button(mainFrame, text="Next Word", padding=(20, 10))    # NEXT BUTTON
