@@ -84,14 +84,16 @@ print(mainFrame.winfo_height())
 
 # Methods to make the flashcard app work
 def next_word(event=None):    # Next method
+    pass
 
 def prev_word(event=None):    # Previous method
-    global english_idx
-    if(english_idx - 1 >= 0):
-        english_idx = english_idx - 1
-    else:
-        english_idx = len(word_dict) - 1
-    word.set(word_dict[english_idx][translated_idx])
+    pass
+    # global english_idx
+    # if(english_idx - 1 >= 0):
+    #     english_idx = english_idx - 1
+    # else:
+    #     english_idx = len(word_dict) - 1
+    # word.set(word_dict[english_idx][translated_idx])
 
 def translate_word(event=None):
     global translated_idx
