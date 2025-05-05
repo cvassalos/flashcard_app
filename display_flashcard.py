@@ -81,6 +81,11 @@ root.grid_rowconfigure(0, weight=1)
 print(mainFrame.winfo_width())
 print(mainFrame.winfo_height())
 
+word = StringVar(value=word_dict[0].return_front())
+print(word_dict[0].return_front())
+
+    # english_idx = (english_idx + 1) % len(word_dict)
+    # word.set(word_dict[english_idx][translated_idx])
 
 # Methods to make the flashcard app work
 def next_word(event=None):    # Next method

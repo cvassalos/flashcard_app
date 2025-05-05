@@ -3,8 +3,8 @@ class Flashcard:
         self.front = front
         self.back = back
 
-    def show_front(self):
+    def return_front(self):
         return self.front
 
-    def show_back(self):
+    def return_back(self):
         return self.back
