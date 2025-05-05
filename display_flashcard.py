@@ -77,8 +77,6 @@ mainFrame.grid(column=0, row=0, sticky="nsew")
 root.grid_columnconfigure(0, weight=1)
 root.grid_rowconfigure(0, weight=1)
 
-print(mainFrame.winfo_width())
-print(mainFrame.winfo_height())
 
 index = 0
 current_card = word_dict[index]
@@ -95,13 +93,11 @@ def next_word(event=None):    # Next method
     flashcard.config(text = current_card.return_front())
 
 def prev_word(event=None):    # Previous method
-    pass
-    # global english_idx
-    # if(english_idx - 1 >= 0):
-    #     english_idx = english_idx - 1
-    # else:
-    #     english_idx = len(word_dict) - 1
-    # word.set(word_dict[english_idx][translated_idx])
+    global index, current_card
+
+    index = len(word_dict) - 1 if index - 1 < 0 else index - 1
+    current_card = word_dict[index]
+    flashcard.config(text = current_card.return_front())
 
 def translate_word(event=None):
     if(current_card.side == 0):
