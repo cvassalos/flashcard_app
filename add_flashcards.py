@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+from flashcard import *
 
 # Create window and add title to it
 root = Tk()
@@ -21,12 +22,14 @@ center_y = int(screen_height / 2 - window_height / 2)
 root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 
 # CARDS TO ADD ARRAY ------------------------------------------
-card_stack = {}
+card_stack = []
 
 # FUNCTIONS -----------------------------------------------
 def add_card_to_stack():
-    card_stack[flashcard_front_entry.get()] = flashcard_back_entry.get()
-    print(card_stack)
+    card_stack.append(Flashcard(flashcard_front_entry.get(), flashcard_back_entry.get()))
+    # card_stack[flashcard_front_entry.get()] = flashcard_back_entry.get()
+    for card in card_stack:
+        print(f'{card.return_front()} ==> {card.return_back()}')
 
 
 # FRAME to put all the widgets into
