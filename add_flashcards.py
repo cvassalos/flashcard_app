@@ -49,6 +49,7 @@ flashcard_front_label.grid(column=0, row=0, padx=25, pady=25)
 # Front of the flashcard ENTRY BOX
 flashcard_front_entry = ttk.Entry(add_cards_frame)
 flashcard_front_entry.grid(column=1, row=0)
+flashcard_front_entry.bind("<Return>", lambda e: add_card_to_stack())
 flashcard_front_entry.focus()
 
 # Back of flashcard LABEL
@@ -58,10 +59,12 @@ flashcard_back_label.grid(column=0, row=1)
 # Back of the flashcard ENTRY BOX
 flashcard_back_entry = ttk.Entry(add_cards_frame)
 flashcard_back_entry.grid(column=1, row=1)
+flashcard_back_entry.bind("<Return>", lambda e: add_card_to_stack())
 
 # Add a button to add the card to the stack
 submit_btn = ttk.Button(add_cards_frame, text="Add Card", command=add_card_to_stack)
 submit_btn.grid(column=0, row=2, columnspan=2, padx=25, pady=25)
+submit_btn.bind("<Return>", lambda e: add_card_to_stack())
 
 # List of flashcards added to stack
 flashcard_stack = Listbox(flashcard_stack_frame, height=10)
