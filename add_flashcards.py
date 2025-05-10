@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import *
 from tkinter import ttk
 from flashcard import *
+from tkinter.messagebox import showerror
 
 # Create window and add title to it
 root = Tk()
@@ -27,11 +28,17 @@ card_stack = []
 
 # FUNCTIONS -----------------------------------------------
 def add_card_to_stack():
-    card_stack.append(Flashcard(flashcard_front_entry.get(), flashcard_back_entry.get()))
-    flashcard_front_entry.delete(0, tk.END)
-    flashcard_back_entry.delete(0, tk.END)
-    for card in card_stack:
-        print(f'{card.return_front()} ==> {card.return_back()}')
+    if len(flashcard_front_entry.get()) == 0:
+        showerror(title = "Entry Error", message = "Please enter text for the front of the flashcard" )
+    elif len(flashcard_back_entry.get()) == 0:
+        showerror(title = "Entry Error", message = "Please enter text for the back of the flashcard")
+
+    else:
+        card_stack.append(Flashcard(flashcard_front_entry.get(), flashcard_back_entry.get()))
+        flashcard_front_entry.delete(0, tk.END)
+        flashcard_back_entry.delete(0, tk.END)
+        for card in card_stack:
+            print(f'{card.return_front()} ==> {card.return_back()}')
 
 
 # FRAME to put all the widgets into
