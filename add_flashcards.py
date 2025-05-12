@@ -24,7 +24,10 @@ center_y = int(screen_height / 2 - window_height / 2)
 root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 
 # CARDS TO ADD ARRAY ------------------------------------------
-card_stack = []
+card_stack = [Flashcard("Port 23", "Telnet"),
+              Flashcard("Port 68", "DHCP"),
+              Flashcard("Port 161", "SNMP")]
+list_variable = tk.Variable(value=([card.return_front() for card in card_stack]))
 
 # FUNCTIONS -----------------------------------------------
 def add_card_to_stack():
@@ -35,6 +38,7 @@ def add_card_to_stack():
 
     else:
         card_stack.append(Flashcard(flashcard_front_entry.get(), flashcard_back_entry.get()))
+        list_variable.set(value=([card.return_front() for card in card_stack]))
         flashcard_front_entry.delete(0, tk.END)
         flashcard_back_entry.delete(0, tk.END)
         flashcard_front_entry.focus()
@@ -75,7 +79,7 @@ submit_btn.grid(column=0, row=2, columnspan=2, padx=25, pady=25)
 submit_btn.bind("<Return>", lambda e: add_card_to_stack())
 
 # List of flashcards added to stack
-flashcard_stack = Listbox(flashcard_stack_frame, height=10)
+flashcard_stack = Listbox(flashcard_stack_frame, listvariable=list_variable, height=10)
 flashcard_stack.grid()
 
 
