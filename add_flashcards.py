@@ -37,6 +37,7 @@ def add_card_to_stack():
         card_stack.append(Flashcard(flashcard_front_entry.get(), flashcard_back_entry.get()))
         flashcard_front_entry.delete(0, tk.END)
         flashcard_back_entry.delete(0, tk.END)
+        flashcard_front_entry.focus()
         for card in card_stack:
             print(f'{card.return_front()} ==> {card.return_back()}')
 
