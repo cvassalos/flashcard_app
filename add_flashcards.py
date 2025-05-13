@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import ttk
 from flashcard import *
 from tkinter.messagebox import showerror
+import tkinter.filedialog as filedialog
 
 # Create window and add title to it
 root = Tk()
@@ -45,6 +46,11 @@ def add_card_to_stack():
         for card in card_stack:
             print(f'{card.return_front()} ==> {card.return_back()}')
 
+def save_stack():
+    file_types = [("Text files", "*.txt"), ("Python files", "*.py")]
+    file_path = filedialog.asksaveasfilename(initialfile="untitile_stack.py", defaultextension=".py", filetypes=file_types, initialdir="./card_stacks")
+    pass
+
 
 # FRAME to put all the widgets into
 add_cards_frame = ttk.Frame(root, borderwidth=1)
@@ -73,10 +79,14 @@ flashcard_back_entry = ttk.Entry(add_cards_frame)
 flashcard_back_entry.grid(column=1, row=1)
 flashcard_back_entry.bind("<Return>", lambda e: add_card_to_stack())
 
-# Add a button to add the card to the stack
+# BUTTON to add the card to the stack
 submit_btn = ttk.Button(add_cards_frame, text="Add Card", command=add_card_to_stack)
-submit_btn.grid(column=0, row=2, columnspan=2, padx=25, pady=25)
+submit_btn.grid(column=0, row=2, columnspan=2, padx=25, pady=10)
 submit_btn.bind("<Return>", lambda e: add_card_to_stack())
+
+# BUTTON to save current stack
+save_btn = ttk.Button(add_cards_frame, text="Save Card Stack", command=save_stack)
+save_btn.grid(column=0, row=3, columnspan=2, padx=25, pady=10)
 
 # List of flashcards added to stack
 flashcard_stack = Listbox(flashcard_stack_frame, listvariable=list_variable, height=10)
