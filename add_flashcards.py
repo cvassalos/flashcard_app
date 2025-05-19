@@ -49,7 +49,14 @@ def add_card_to_stack():
 def save_stack():
     file_types = [("Text files", "*.txt"), ("Python files", "*.py")]
     file_path = filedialog.asksaveasfilename(initialfile="untitile_stack.py", defaultextension=".py", filetypes=file_types, initialdir="./card_stacks")
-    pass
+
+    if file_path:
+        try:
+            with open(file_path, "w") as f:
+                for card in card_stack:
+                    f.write(f"{str(card)}\n")
+        except Exception as e:
+            showerror("Save error", f"Failed to save file: \n{e}")
 
 
 # FRAME to put all the widgets into
@@ -91,7 +98,6 @@ save_btn.grid(column=0, row=3, columnspan=2, padx=25, pady=10)
 # List of flashcards added to stack
 flashcard_stack = Listbox(flashcard_stack_frame, listvariable=list_variable, height=10)
 flashcard_stack.grid()
-
 
 
 root.mainloop()
