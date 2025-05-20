@@ -63,7 +63,7 @@ center_y = int(screen_height / 2 - window_height / 2)
 root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 
 # Change app icon ----------------------------- NOT WORKING FOR SOME REASON
-root.iconbitmap('./images/flashcard.ico')
+# root.iconbitmap('./images/flashcard.ico')
 
 
 # Configuring the grid
