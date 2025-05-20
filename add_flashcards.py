@@ -106,6 +106,7 @@ root.config(menu=menubar)
 
 # Create a file menu whose container is menubar
 file_menu = Menu(menubar, tearoff=False)
+help_menu = Menu(menubar, tearoff=False)
 
 # Adding items to file menu
 file_menu.add_command(label="Open")
@@ -122,6 +123,11 @@ menubar.add_cascade(
     label="File",
     menu=file_menu,
     underline=0
+)
+menubar.add_cascade(
+        label="Help",
+        menu=help_menu,
+        underline=0
 )
 
 
