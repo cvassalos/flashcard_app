@@ -99,14 +99,27 @@ save_btn.grid(column=0, row=3, columnspan=2, padx=25, pady=10)
 flashcard_stack = Listbox(flashcard_stack_frame, listvariable=list_variable, height=10)
 flashcard_stack.grid()
 
-# MENUBAR at top of window to hold things like open and save
+################### MENUBAR at top of window to hold things like open and save
+# Create menubar and assign it to the root 
 menubar = Menu(root)
 root.config(menu=menubar)
+
+# Create a file menu whose container is menubar
 file_menu = Menu(menubar)
+
+# Adding item to file menu
 file_menu.add_command(
     label="Exit",
     command=root.destroy,
 )
+
+# Add file menu to menubar
+menubar.add_cascade(
+    label="File",
+    menu=file_menu,
+    underline=0
+)
+
 
 
 root.mainloop()
