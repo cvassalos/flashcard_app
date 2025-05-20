@@ -105,9 +105,13 @@ menubar = Menu(root)
 root.config(menu=menubar)
 
 # Create a file menu whose container is menubar
-file_menu = Menu(menubar)
+file_menu = Menu(menubar, tearoff=False)
 
-# Adding item to file menu
+# Adding items to file menu
+file_menu.add_command(label="Open")
+file_menu.add_command(label="Save")
+file_menu.add_separator()
+
 file_menu.add_command(
     label="Exit",
     command=root.destroy,
