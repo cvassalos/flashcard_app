@@ -110,7 +110,7 @@ help_menu = Menu(menubar, tearoff=False)
 
 # Adding items to file menu
 file_menu.add_command(label="Open")
-file_menu.add_command(label="Save")
+file_menu.add_command(label="Save", command=save_stack,)
 file_menu.add_separator()
 
 file_menu.add_command(
