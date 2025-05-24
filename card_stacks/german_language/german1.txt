@@ -1,0 +1,21 @@
+Wie geht's::How are you?
+Es geht::I'm alright
+danke::thank you
+Guten Tag::Good afternoon
+super::great
+sehr::very
+gut::good
+Guten Morgen::Good morning
+Auf Wiedersehen::Goodbye
+Bis bald::See you soon
+wein::wine
+bitte::please
+Bis später::See you later
+Tschüss::Bye
+Du bist::You are
+nett::nice
+Es tut mir leid::I'm sorry
+Guten Abend::Good Evening
+Kein Problem::No problem
+Natürlich::Of course
+gut::good
