@@ -25,10 +25,12 @@ center_y = int(screen_height / 2 - window_height / 2)
 root.geometry(f'{window_width}x{window_height}+{center_x}+{center_y}')
 
 # CARDS TO ADD ARRAY ------------------------------------------
-card_stack = [Flashcard("Port 23", "Telnet"),
-              Flashcard("Port 68", "DHCP"),
-              Flashcard("Port 161", "SNMP")]
+card_stack = []
 list_variable = tk.Variable(value=([card.return_front() for card in card_stack]))
+
+# card_stack = [Flashcard("Port 23", "Telnet"),
+#               Flashcard("Port 68", "DHCP"),
+#               Flashcard("Port 161", "SNMP")]
 
 # FUNCTIONS -----------------------------------------------
 def add_card_to_stack():
@@ -96,8 +98,8 @@ save_btn = ttk.Button(add_cards_frame, text="Save Card Stack", command=save_stac
 save_btn.grid(column=0, row=3, columnspan=2, padx=25, pady=10)
 
 # List of flashcards added to stack
-flashcard_stack = Listbox(flashcard_stack_frame, listvariable=list_variable, height=10)
-flashcard_stack.grid()
+# flashcard_stack = Listbox(flashcard_stack_frame, listvariable=list_variable, height=10)
+# flashcard_stack.grid()
 
 ################### MENUBAR at top of window to hold things like open and save
 # Create menubar and assign it to the root 
