@@ -5,7 +5,7 @@
 
 {
   "distance": 
-    "type of word": "noun",
+    "category": "noun",
     [
       (η) απόσταση,
       (οι) αποστάσεις
@@ -13,7 +13,40 @@
 }
 
 {
-  "slow": [
-    
+  "slow": 
+    "category": "adjective",
+    [
+      "masculine": [
+        (ο) αργός,
+        (οι) αργοί
+      ],
+      "feminine": [
+        (η) αργή,
+        (οι) αργές
+      ],
+      "neuter": [
+        (το) αργό,
+        (τα) αργά
+    ]
   ]
+}
+
+{
+  "boring": 
+    "category": "adjective",
+    "synonyms": "dull",
+    [
+      "masculine": [
+        (ο) βαρετός,
+        (οι) βαρετοί
+      ],
+      "feminine": [
+        (η) βαρετή,
+        (οι) βαρετές
+      ],
+      "neutor": [
+        (το) βαρετό,
+        (τα) βαρετά
+      ]
+    ]
 }
