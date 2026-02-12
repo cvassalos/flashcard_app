@@ -1,52 +1,66 @@
-{
-  class_name: "Expressing Likes and Dislikes in Greek: Talking About Hobbies and Preferences"
-  date: 2026-02-06
-}
+[
+    class_name: "Expressing Likes and Dislikes in Greek: Talking About Hobbies and Preferences"
+  {
+    date: 2026-02-06
+  }
 
-{
-  "distance": 
-    "category": "noun",
-    [
-      (η) απόσταση,
-      (οι) αποστάσεις
-    ]
-}
+  {
+    "word": "distance", 
+    "class": "noun",
+    "translations" ["(η) απόσταση", "(οι) αποστάσεις"]
+  },
+  {
+    "word": "slow", 
+    "class": "adjective",
+    "inflections": {
+      "masculine": ["(ο) αργός", "(οι) αργοί"],
+        "feminine": ["(η) αργή", "(οι) αργές"],
+        "neuter": ["(το) αργό", "(τα) αργά"]
+    }
+  }
 
-{
-  "slow": 
-    "category": "adjective",
-    [
-      "masculine": [
-        (ο) αργός,
-        (οι) αργοί
+  {
+    "boring": 
+      "class": "adjective",
+      "synonyms": [
+        "dull",
       ],
-      "feminine": [
-        (η) αργή,
-        (οι) αργές
-      ],
-      "neuter": [
-        (το) αργό,
-        (τα) αργά
-    ]
-  ]
-}
-
-{
-  "boring": 
-    "category": "adjective",
-    "synonyms": "dull",
-    [
-      "masculine": [
-        (ο) βαρετός,
-        (οι) βαρετοί
-      ],
-      "feminine": [
-        (η) βαρετή,
-        (οι) βαρετές
-      ],
-      "neutor": [
-        (το) βαρετό,
-        (τα) βαρετά
+      [
+        "masculine": [
+          (ο) βαρετός,
+          (οι) βαρετοί
+        ],
+        "feminine": [
+          (η) βαρετή,
+          (οι) βαρετές
+        ],
+        "neutor": [
+          (το) βαρετό,
+          (τα) βαρετά
+        ]
       ]
-    ]
-}
+  }
+
+  {
+    "full":
+      "class": "adjective",
+      "synonyms": [
+        "busy",
+        "whole"
+      ],
+      [
+        "masculine": [
+          (ο) γεμάτος,
+          (οι) γεμάτοι
+        ],
+        "feminine": [
+          (η) γεμάτη,
+          (οι) γεμάτες
+        ],
+        "neuter": [
+          (το) γεμάτο,
+          (τα) γεμάτα
+        ]
+      ]
+  }
+]
