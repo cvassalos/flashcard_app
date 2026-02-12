@@ -7,7 +7,7 @@
     {
       "word": "distance", 
       "class": "noun",
-      "translations": ["(η) απόσταση", "(οι) αποστάσεις"]
+      "translation": ["(η) απόσταση", "(οι) αποστάσεις"]
     },
     {
       "word": "slow", 
@@ -42,7 +42,7 @@
       "word": "sweet treat",
       "class": "noun",
       "synonyms": ["candy", "dessert"],
-      "translations": ["(το) γλυκό", "(τα) γλυκά"]
+      "translation": ["(το) γλυκό", "(τα) γλυκά"]
     },
     {
       "word": "sweet",
@@ -58,13 +58,13 @@
       "word": "vacation",
       "class": "noun",
       "synonyms": "holiday",
-      "translations": ["(οι) διακοπές"]
+      "translation": ["(οι) διακοπές"]
     },
     {
       "word": "entertainment",
       "class": "noun",
       "synonyms": ["amusement", "fun"],
-      "translations": ["(η) διασκέδαση", "(οι) διασκεδάσεις"]
+      "translation": ["(η) διασκέδαση", "(οι) διασκεδάσεις"]
     },
     {
       "word": "difficult",
@@ -90,19 +90,19 @@
       "word": "guitar",
       "class": "noun",
       "synonyms": "",
-      "translations": ["(οι) κιθάρα"]
+      "translation": ["(οι) κιθάρα"]
     },
     {
       "word": "swimming",
       "class": "noun",
       "synonyms": "",
-      "translations": ["(η) κολύμβηση"]
+      "translation": ["(η) κολύμβηση"]
     },
     {
       "word": "bus",
       "class": "noun",
       "synonyms": "",
-      "translations": ["(το) λεωφορείο", "(τα) λεωφορεία"]
+      "translation": ["(το) λεωφορείο", "(τα) λεωφορεία"]
     },
     {
       "word": "economical",
@@ -113,6 +113,64 @@
         "feminine": ["(η) οικονομοική", "(οι) οικονομικές"],
         "neuter": ["(το) οικονομικό", "(τα) οικονομικά"]
       }
+    },
+    {
+      "word": "old",
+      "class": "adjective",
+      "synonyms": ["vintage"],
+      "inflections": {
+        "masculine": ["(ο) παλιός", "(οι) παλιοί"],
+        "feminine": ["(η) παλιά", ("(οι) παλιές"],
+        "neuter": ["(το) παλιό", "(τα) παλιά"]
+      }
+    },
+    {
+      "word": "football",
+      "class": "noun",
+      "synonyms": "",
+      "translation": ["(το) ποδόσφαιρο"]
+    },
+    {
+      "word": "chess",
+      "class": "noun",
+      "synonyms": "",
+      "translation": ["(το) σκάκι"]
+    },
+    {
+      "word": "trip",
+      "class": "noun",
+      "synonyms": ["journey"],
+      "translation": ["(το) ταξίδι", "(τα) ταξίδια"]
+    },
+    {
+      "word": "art",
+      "class": "noun",
+      "synonyms": "craft",
+      "translation": ["(η) τέχνη", "(οι) τέχνες"]
+    },
+    {
+      "word": "horor",
+      "class": "noun",
+      "synonyms": "terror",
+      "translation": ["(ο) τρόμος", "(οι) τρόμοι"]
+    },
+    {
+      "word": "snow",
+      "class": "noun",
+      "synonyms": "",
+      "translation": ["(το) χιόνι", "(τα) χιόνια"]
+    },
+    {
+      "word": "fishing",
+      "class": "noun",
+      "synonyms": "",
+      "translation": ["(το) ψάρεμα", "(τα) ψάρέματα"]
+    },
+    {
+      "word": "free time",
+      "class": "noun",
+      "synonyms": "",
+      "translation": ["(ο) ελεύθερος χρόνος"]
     }
 
   ]
