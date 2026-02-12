@@ -1,9 +1,8 @@
 [
-    class_name: "Expressing Likes and Dislikes in Greek: Talking About Hobbies and Preferences"
   {
+    class_name: "Expressing Likes and Dislikes in Greek: Talking About Hobbies and Preferences",
     date: 2026-02-06
-  }
-
+  },
   {
     "word": "distance", 
     "class": "noun",
@@ -17,29 +16,17 @@
         "feminine": ["(η) αργή", "(οι) αργές"],
         "neuter": ["(το) αργό", "(τα) αργά"]
     }
-  }
-
+  },
   {
-    "boring": 
-      "class": "adjective",
-      "synonyms": [
-        "dull",
-      ],
-      [
-        "masculine": [
-          (ο) βαρετός,
-          (οι) βαρετοί
-        ],
-        "feminine": [
-          (η) βαρετή,
-          (οι) βαρετές
-        ],
-        "neutor": [
-          (το) βαρετό,
-          (τα) βαρετά
-        ]
-      ]
-  }
+    "word": "boring",
+    "class": "adjective",
+    "synonyms": ["dull"],
+    "inflections": {
+        "masculine": ["(ο) βαρετός", "(οι) βαρετοί"],
+        "feminine": ["(η) βαρετή", "(οι) βαρετές"],
+        "neutor": ["(το) βαρετό", "(τα) βαρετά"]
+    }
+  },
 
   {
     "full":
