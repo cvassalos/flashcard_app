@@ -53,6 +53,66 @@
         "feminine": ["(η) γλυκιά", "(οι) γλυκές"],
         "neuter": ["(το) γλυκό", "(τα) γλυκά"]
       }
+    },
+    {
+      "word": "vacation",
+      "class": "noun",
+      "synonyms": "holiday",
+      "translations": ["(οι) διακοπές"]
+    },
+    {
+      "word": "entertainment",
+      "class": "noun",
+      "synonyms": ["amusement", "fun"],
+      "translations": ["(η) διασκέδαση", "(οι) διασκεδάσεις"]
+    },
+    {
+      "word": "difficult",
+      "class": "adjective",
+      "synonyms": ["tough"],
+      "inflections": {
+        "masucline": ["(ο) δύσκολος", "(οι) δύσκολοι"],
+        "feminine": ["(η) δύσκολη", "(οι) δύσκολες"]
+        "neuter": ["(το) δύσκολο", "(τα) δισκολα"]
+      }
+    },
+    {
+      "word": "free",
+      "class": "adjective",
+      "synonyms": ["vacant", "single"],
+      "inflections": {
+        "masucline": ["(ο) ελεύθερος", "(οι) ελεύθεροι"],
+        "feminine": ["(η) ελεύθερη", "(οι) ελεύθερες"],
+        "neuter": ["(το) ελεύθερο", "(τα) ελεύθερα"]
+      }
+    },
+    {
+      "word": "guitar",
+      "class": "noun",
+      "synonyms": "",
+      "translations": ["(οι) κιθάρα"]
+    },
+    {
+      "word": "swimming",
+      "class": "noun",
+      "synonyms": "",
+      "translations": ["(η) κολύμβηση"]
+    },
+    {
+      "word": "bus",
+      "class": "noun",
+      "synonyms": "",
+      "translations": ["(το) λεωφορείο", "(τα) λεωφορεία"]
+    },
+    {
+      "word": "economical",
+      "class": "adjective",
+      "synonyms": ["financial", "fiscal"],
+      "inflections": {
+        "masculine": ["(ο) οικονομικός", "(οι) οικονομικοί"],
+        "feminine": ["(η) οικονομοική", "(οι) οικονομικές"],
+        "neuter": ["(το) οικονομικό", "(τα) οικονομικά"]
+      }
     }
 
   ]
