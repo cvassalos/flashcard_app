@@ -38,5 +38,22 @@
         "neuter": ["(το) γεμάτο", "(τα) γεμάτα"]
       }
     },
+    {
+      "word": "sweet treat",
+      "class": "noun",
+      "synonyms": ["candy", "dessert"],
+      "translations": ["(το) γλυκό", "(τα) γλυκά"]
+    },
+    {
+      "word": "sweet",
+      "class": "adjective",
+      "synonyms": "n/a",
+      "inflections": {
+        "masculine": ["(ο) γλυκός", "(οι) γλυκοί"],
+        "feminine": ["(η) γλυκιά", "(οι) γλυκές"],
+        "neuter": ["(το) γλυκό", "(τα) γλυκά"]
+      }
+    }
+
   ]
 }
