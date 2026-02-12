@@ -1,53 +1,42 @@
-[
-  {
-    class_name: "Expressing Likes and Dislikes in Greek: Talking About Hobbies and Preferences",
-    date: 2026-02-06
+{
+  "deck_metadata": {
+    "class_name": "Expressing Likes and Dislikes in Greek: Talking About Hobbies and Preferences",
+    "date": "2026-02-06"
   },
-  {
-    "word": "distance", 
-    "class": "noun",
-    "translations" ["(η) απόσταση", "(οι) αποστάσεις"]
-  },
-  {
-    "word": "slow", 
-    "class": "adjective",
-    "inflections": {
-      "masculine": ["(ο) αργός", "(οι) αργοί"],
-        "feminine": ["(η) αργή", "(οι) αργές"],
-        "neuter": ["(το) αργό", "(τα) αργά"]
-    }
-  },
-  {
-    "word": "boring",
-    "class": "adjective",
-    "synonyms": ["dull"],
-    "inflections": {
-        "masculine": ["(ο) βαρετός", "(οι) βαρετοί"],
-        "feminine": ["(η) βαρετή", "(οι) βαρετές"],
-        "neutor": ["(το) βαρετό", "(τα) βαρετά"]
-    }
-  },
-
-  {
-    "full":
+  "cards": [
+    {
+      "word": "distance", 
+      "class": "noun",
+      "translations": ["(η) απόσταση", "(οι) αποστάσεις"]
+    },
+    {
+      "word": "slow", 
       "class": "adjective",
-      "synonyms": [
-        "busy",
-        "whole"
-      ],
-      [
-        "masculine": [
-          (ο) γεμάτος,
-          (οι) γεμάτοι
-        ],
-        "feminine": [
-          (η) γεμάτη,
-          (οι) γεμάτες
-        ],
-        "neuter": [
-          (το) γεμάτο,
-          (τα) γεμάτα
-        ]
-      ]
-  }
-]
+      "inflections": {
+        "masculine": ["(ο) αργός", "(οι) αργοί"],
+          "feminine": ["(η) αργή", "(οι) αργές"],
+          "neuter": ["(το) αργό", "(τα) αργά"]
+      }
+    },
+    {
+      "word": "boring",
+      "class": "adjective",
+      "synonyms": ["dull"],
+      "inflections": {
+          "masculine": ["(ο) βαρετός", "(οι) βαρετοί"],
+          "feminine": ["(η) βαρετή", "(οι) βαρετές"],
+          "neuter": ["(το) βαρετό", "(τα) βαρετά"]
+      }
+    },
+    {
+      "word": "full",
+      "class": "adjective",
+      "synonyms": ["busy", "whole"],
+      "inflections": {
+        "masculine": ["(ο) γεμάτος", "(οι) γεμάτοι"],
+        "feminine": ["(η) γεμάτη", "(οι) γεμάτες"],
+        "neuter": ["(το) γεμάτο", "(τα) γεμάτα"]
+      }
+    },
+  ]
+}
