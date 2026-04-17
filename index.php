@@ -1,13 +1,24 @@
+<head>
 <html>
-<head></head>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-Hello!
+GREEK FLASHCARDS!
 <br>
 <?php 
-  $age = 20;
-  $name = 'Jake';
-  echo "<h1>Hello $name. You are $age years old.</h1>";
+  $english_word = 'the donkey';
+  $greek_word = 'το γάιδαρος';
 ?>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <p><?php echo $english_word ?></p>
+    </div>
+    <div class="flip-card-back">
+      <p><?php echo $greek_word ?></p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
 
