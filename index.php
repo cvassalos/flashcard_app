@@ -1,6 +1,7 @@
 <head>
 <html>
   <link rel="stylesheet" href="styles.css">
+  <script src="./script.js"></script>
 </head>
 <body>
 GREEK FLASHCARDS!
@@ -9,7 +10,7 @@ GREEK FLASHCARDS!
   $english_word = 'the donkey';
   $greek_word = 'το γάιδαρος';
 ?>
-<div class="flip-card">
+<div class="flip-card" onclick="flipCard(this)">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <p><?php echo $english_word ?></p>
