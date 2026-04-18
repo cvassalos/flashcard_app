@@ -2,13 +2,14 @@
 <html>
   <link rel="stylesheet" href="styles.css">
   <script src="./script.js"></script>
+  <?php include "./stack.php" ?>
 </head>
 <body>
 GREEK FLASHCARDS!
 <br>
 <?php 
-  $english_word = 'the donkey';
-  $greek_word = 'το γάιδαρος';
+#  $english_word = 'the donkey';
+#  $greek_word = 'το γάιδαρος';
 ?>
 <div class="flip-card" onclick="flipCard(this)">
   <div class="flip-card-inner">
