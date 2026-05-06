@@ -7,10 +7,6 @@
 <body>
 GREEK FLASHCARDS!
 <br>
-<?php 
-#  $english_word = 'the donkey';
-#  $greek_word = 'το γάιδαρος';
-?>
 <div class="flip-card" onclick="flipCard(this)">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -21,6 +17,8 @@ GREEK FLASHCARDS!
     </div>
   </div>
 </div>
+<button type="button">Prev Card</button>
+<button type="button">Next Card</button>
 </body>
 </html>
 
